@@ -19,6 +19,7 @@
 
 		defaultpng = [[CCSprite spriteWithFile:@"Default.png"] retain];
 		defaultpng.anchorPoint = CGPointZero; // HMM!
+		defaultpng.scale = [[UIScreen mainScreen] scale] > 1 ? 0.5 : 1.0;
 		[self addChild:defaultpng z:10];
 		
 		counter = 0;

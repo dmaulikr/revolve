@@ -9,6 +9,7 @@
 #import "Revolve99AppDelegate.h"
 #import "cocos2d.h"
 #import "IntroScene.h"
+#import "MainMenuScene.h"
 
 @implementation Revolve99AppDelegate
 
@@ -53,6 +54,7 @@
 		
 	// prevent flicker
 	CCSprite *sprite = [[CCSprite spriteWithFile:@"Default.png"] retain];
+	sprite.scale = [[UIScreen mainScreen] scale] > 1 ? 0.5 : 1.0;;
 	sprite.anchorPoint = CGPointZero; // HMM!
 	[sprite draw];	
 	[[[CCDirector sharedDirector] openGLView] swapBuffers];

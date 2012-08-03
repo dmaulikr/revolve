@@ -11,6 +11,8 @@ build
 *.xml.*
 feed_archive
 
+Revolve99.xcodeproj/project.xcworkspace/xcuserdata
+Revolve99.xcodeproj/xcuserdata
 syntax: regexp
 
 ^MKCKit

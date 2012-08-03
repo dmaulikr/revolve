@@ -64,8 +64,8 @@
 	reqRankOnly = NO;
 	
 	NSString *device = @"";
-	if( flags & kQueryFlagByDevice )
-		device = [[UIDevice currentDevice] uniqueIdentifier];
+//	if( flags & kQueryFlagByDevice )
+//		device = [[UIDevice currentDevice] uniqueIdentifier];
 	
 	// arguments:
 	//  query: type of query
